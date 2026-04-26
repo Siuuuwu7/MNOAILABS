@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="AI automation for e-commerce and retail in Bangladesh — gen-AI product content, Banglish search, WhatsApp sales agents, review summarization and marketing copilots." />
+<title>E-commerce &amp; Retail — MNO AI LABS</title>
+<link rel="icon" type="image/png" href="../logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="noise"></div>
+<div class="grid-bg"></div>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <img src="../logo.png" alt="MNO AI LABS" />
+      <span>MNO <b>AI</b> LABS</span>
+    </a>
+    <nav class="nav-links">
+      <a href="../index.html#services" data-hover>Services</a>
+      <a href="../index.html#industries" data-hover>Industries</a>
+      <a href="../index.html#capabilities" data-hover>Capabilities</a>
+      <a href="../index.html#process" data-hover>Process</a>
+      <a href="../index.html#contact" data-hover>Contact</a>
+    </nav>
+    <a href="../index.html#contact" class="nav-cta" data-hover>
+      <span>Start a project</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <nav>
+    <a href="../index.html#services">Services</a>
+    <a href="../index.html#industries">Industries</a>
+    <a href="../index.html#capabilities">Capabilities</a>
+    <a href="../index.html#process">Process</a>
+    <a href="../index.html#contact">Contact</a>
+    <a href="../index.html#contact" class="mobile-cta">Start a project →</a>
+  </nav>
+</div>
+
+<section class="sub-hero">
+  <div class="breadcrumb">
+    <a href="../index.html">Home</a>
+    <span class="sep">/</span>
+    <a href="../index.html#industries">Industries</a>
+    <span class="sep">/</span>
+    <span>E-commerce &amp; Retail</span>
+  </div>
+  <div class="sub-hero-grid">
+    <div>
+      <span class="industry-tag">D2C · Marketplaces · F-commerce · Retail</span>
+      <h1>Commerce that <i>sells itself</i>.</h1>
+      <p class="sub-lead">
+        From auto-generated product photos to Bangla WhatsApp sales agents —
+        we wire AI through every part of a Bangladeshi online store, so small
+        teams can run catalogs and conversations at scale.
+      </p>
+      <div class="sub-hero-cta">
+        <a href="../index.html#contact" class="btn btn-primary" data-hover>
+          <span>Talk to us</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#usecases" class="btn btn-ghost" data-hover><span>See use cases</span></a>
+      </div>
+    </div>
+    <div class="sub-hero-visual">
+      <span class="visual-tag"><span class="dot"></span> Bangla-first · WhatsApp-ready</span>
+      <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1400&q=80" alt="E-commerce" />
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:60px">
+  <div class="feature-row">
+    <div>
+      <span class="industry-tag">Why this, why now</span>
+      <h3>Bangladesh shops on Facebook, WhatsApp and a few marketplaces. Your AI should live there too.</h3>
+      <p>The average Bangladeshi online store runs on two or three people answering DMs, shooting phone photos and writing captions at midnight. Gen-AI is the first technology that genuinely scales that work — if it speaks Bangla, understands Banglish and plays well with WhatsApp, Messenger and Daraz.</p>
+      <ul>
+        <li>Auto product photos, videos and captions from a single phone shot</li>
+        <li>Banglish search that actually finds the product</li>
+        <li>WhatsApp and Messenger agents that close orders in Bangla</li>
+        <li>Gen-AI marketing that stays on brand in both languages</li>
+      </ul>
+    </div>
+    <div class="media-stage">
+      <span class="tag">WhatsApp · Bangla sales bot</span>
+      <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1400&q=80" alt="Chat sales" />
+    </div>
+  </div>
+</section>
+
+<section class="section" id="usecases">
+  <div class="section-header">
+    <div class="eyebrow"><span></span> 01 — Use cases</div>
+    <h2 class="section-title reveal">Every part of the funnel, <i>quietly automated</i>.</h2>
+  </div>
+
+  <h3 style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;margin:10px 0 22px;color:var(--ink-dim)">Gen-AI product content</h3>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Gen-AI · Vision</span>
+      <h4>Auto product photography</h4>
+      <p>Turn a phone snap on a white bedsheet into clean studio photos — consistent background, lighting, shadow — in seconds, per SKU.</p>
+      <div class="uc-tech"><span>Diffusion</span><span>Segmentation</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> Gen-AI</span>
+      <h4>Virtual try-on</h4>
+      <p>Let customers see a kurti, saree, shoe or glasses on their own photo or a diverse set of models — reduces returns and boosts conversion.</p>
+      <div class="uc-tech"><span>Diffusion</span><span>Pose</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> Vision</span>
+      <h4>Background removal at scale</h4>
+      <p>Batch-process thousands of product photos — transparent, coloured or lifestyle backgrounds — without sending them to an external designer.</p>
+      <div class="uc-tech"><span>Matting</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Gen-AI · LLM</span>
+      <h4>Product titles &amp; descriptions</h4>
+      <p>Write SEO-friendly titles and descriptions in Bangla and English from photos and bullet-points — tuned to your tone and category vocabulary.</p>
+      <div class="uc-tech"><span>LLM</span><span>SEO</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> Gen-AI</span>
+      <h4>Short-form video ads</h4>
+      <p>Stitch product stills into Reels / TikTok / Facebook-story-shaped videos with motion, captions and music — on brand, on autopilot.</p>
+      <div class="uc-tech"><span>Video</span><span>TTS</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> Vision</span>
+      <h4>Catalog deduplication</h4>
+      <p>Detect near-duplicate listings, mis-tagged variants and wrongly categorized SKUs across your own store or marketplace feeds.</p>
+      <div class="uc-tech"><span>Embeddings</span></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;margin:60px 0 22px;color:var(--ink-dim)">Search &amp; discovery</h3>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> NLP</span>
+      <h4>Banglish &amp; Bangla search</h4>
+      <p>Customers type "jamdani shari lal rong" or "red saree" — our search understands both, plus typos, transliteration and slang.</p>
+      <div class="uc-tech"><span>Embeddings</span><span>Transliteration</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> Vision</span>
+      <h4>Visual search &amp; "find similar"</h4>
+      <p>Customers upload a Pinterest photo or screenshot — your store shows the closest matches in the catalog, instantly.</p>
+      <div class="uc-tech"><span>CLIP</span><span>Vector DB</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> ML</span>
+      <h4>Personalized homepage</h4>
+      <p>Recommend the right collection, banner and products per visitor — with cold-start logic for first-time traffic from Meta ads.</p>
+      <div class="uc-tech"><span>Recs</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> LLM</span>
+      <h4>Conversational search</h4>
+      <p>"Show me a winter panjabi under 2500 taka for my dad" — the store answers in natural Bangla / English and filters live.</p>
+      <div class="uc-tech"><span>LLM</span><span>Tool-use</span></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;margin:60px 0 22px;color:var(--ink-dim)">LLM sales agents</h3>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> LLM · WhatsApp</span>
+      <h4>WhatsApp order agent</h4>
+      <p>Greets in Bangla, reads product questions, suggests sizes, captures delivery address, confirms COD / bKash — and only escalates tricky cases to a human.</p>
+      <div class="uc-tech"><span>LLM</span><span>WhatsApp API</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> LLM · Messenger</span>
+      <h4>Facebook / Messenger agent</h4>
+      <p>Handles comment replies, DMs, price queries and stock checks on Facebook — the #1 sales channel for Bangladeshi SMEs.</p>
+      <div class="uc-tech"><span>LLM</span><span>Meta API</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> LLM</span>
+      <h4>Review summarization</h4>
+      <p>Distill 500 reviews into 5 bullets — "fits large", "delivery slow outside Dhaka", "fabric thinner than expected" — and highlight top complaints.</p>
+      <div class="uc-tech"><span>LLM</span><span>Sentiment</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> LLM</span>
+      <h4>Returns &amp; refunds bot</h4>
+      <p>Walks customers through returns, runs policy checks, drafts empathetic replies — in Bangla — with an auditor-friendly log for every decision.</p>
+      <div class="uc-tech"><span>LLM</span><span>Rules</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> LLM</span>
+      <h4>Abandoned-cart rescue</h4>
+      <p>Personalized WhatsApp / SMS nudges referencing the specific product, colour, size — not generic "you left something behind" spam.</p>
+      <div class="uc-tech"><span>LLM</span><span>Segmentation</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> Voice</span>
+      <h4>Bangla voice agent</h4>
+      <p>Phone-support voice agent for order status, delivery rescheduling, and FAQ — so your small team can focus on real conversations.</p>
+      <div class="uc-tech"><span>ASR</span><span>TTS</span></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;margin:60px 0 22px;color:var(--ink-dim)">Marketing &amp; growth</h3>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Gen-AI</span>
+      <h4>Ad creative factory</h4>
+      <p>One product → dozens of Meta / TikTok ad variants with copy, CTA, price-tag and language permutations — all on-brand.</p>
+      <div class="uc-tech"><span>Diffusion</span><span>LLM</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> LLM</span>
+      <h4>Personalized email / SMS</h4>
+      <p>Segment-of-one campaigns — recommended products, tone and offer per customer — drafted automatically and scheduled at the right hour.</p>
+      <div class="uc-tech"><span>Segmentation</span><span>LLM</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> LLM</span>
+      <h4>Creator / UGC brief generator</h4>
+      <p>Generate detailed creator briefs per product and campaign, including hooks, captions, talking-points and hashtags.</p>
+      <div class="uc-tech"><span>LLM</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Analytics + LLM</span>
+      <h4>Daily marketing report in Bangla</h4>
+      <p>An auto-generated, plain-Bangla daily report of spend, ROAS, top products and things to fix today — delivered on WhatsApp.</p>
+      <div class="uc-tech"><span>Reporting</span><span>LLM</span></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;margin:60px 0 22px;color:var(--ink-dim)">Ops &amp; inventory</h3>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> ML</span>
+      <h4>Demand forecast &amp; reorder</h4>
+      <p>Per-SKU forecasts tuned to Bangladeshi calendars — Eid, Pohela Boishakh, wedding seasons — so you don't stock out in the right sizes.</p>
+      <div class="uc-tech"><span>TS models</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> ML</span>
+      <h4>Dynamic pricing</h4>
+      <p>Elasticity-aware price suggestions, with category and marketplace price-match logic and "guardrails" to prevent value erosion.</p>
+      <div class="uc-tech"><span>Elasticity</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> ML</span>
+      <h4>COD fraud &amp; RTO risk</h4>
+      <p>Score each COD order on the risk of Return-To-Origin — so you can pre-call, pre-pay or reshape shipping for the highest-risk ones.</p>
+      <div class="uc-tech"><span>Classifier</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-header">
+    <div class="eyebrow"><span></span> 02 — Pipeline</div>
+    <h2 class="section-title reveal">From a phone snap to <i>a paying customer</i>.</h2>
+  </div>
+  <div class="pipeline">
+    <div class="pipe-step">
+      <div class="n">01 · INGEST</div>
+      <h5>Photos, DMs, orders</h5>
+      <p>Product photos from your phone, DMs on Facebook / WhatsApp, marketplace feeds, past orders and reviews.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">02 · PERCEIVE</div>
+      <h5>Vision + NLP</h5>
+      <p>Segment products, understand Bangla / Banglish messages, embed every item and every query into a shared vector space.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">03 · GENERATE</div>
+      <h5>Content &amp; replies</h5>
+      <p>Gen-AI produces photos, captions, ads, and agent replies — on-brand, bilingual, ready to ship.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">04 · ACT</div>
+      <h5>Sell + retain</h5>
+      <p>Publish to store &amp; socials, reply in chat, nudge carts, and route the hard cases to humans.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">05 · LEARN</div>
+      <h5>Feedback loop</h5>
+      <p>Reviews, returns, conversion and ROAS feed back in — so tomorrow's content, search and pricing are better than today's.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="gallery">
+    <figure><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1400&q=80" alt="Store"><figcaption>Online storefront</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?w=900&q=80" alt="Packaging"><figcaption>Packing &amp; fulfillment</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1573855619003-97b4799dcd8b?w=900&q=80" alt="Fashion"><figcaption>Fashion catalog</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80" alt="Checkout"><figcaption>COD checkout flow</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=900&q=80" alt="Ads"><figcaption>Ad creative variants</figcaption></figure>
+  </div>
+</section>
+
+<section class="section cta-section">
+  <div class="cta-inner">
+    <div class="cta-ornament"></div>
+    <span class="eyebrow center"><span></span> Let's build</span>
+    <h2 class="cta-title">A tiny team, <br /><i class="gradient-text">with an AI back office.</i></h2>
+    <p class="cta-sub">Send us your store link. We'll come back with a concrete list of what to automate first and how much it will move the needle.</p>
+    <a href="../index.html#contact" class="btn btn-primary" data-hover>
+      <span>Start a conversation</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+    <div class="contact-alt">Or email us at <a href="mailto:mnoailabs@gmail.com">mnoailabs@gmail.com</a></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="../logo.png" alt="MNO AI LABS" />
+      <span>MNO <b>AI</b> LABS</span>
+    </div>
+    <div class="footer-tagline">Industrial AI, built in Bangladesh.</div>
+  </div>
+  <div class="footer-cols">
+    <div>
+      <h6>Industries</h6>
+      <a href="industrial-monitoring.html">Industrial Monitoring</a>
+      <a href="manufacturing.html">RMG &amp; Manufacturing</a>
+      <a href="finance.html">Finance &amp; Fintech</a>
+      <a href="ecommerce.html">E-commerce</a>
+      <a href="agriculture.html">Agriculture</a>
+      <a href="healthcare.html">Healthcare</a>
+    </div>
+    <div>
+      <h6>Services</h6>
+      <a href="../index.html#services">Agents</a>
+      <a href="../index.html#services">Vision</a>
+      <a href="../index.html#services">LLM &amp; RAG</a>
+      <a href="../index.html#services">Analytics</a>
+    </div>
+    <div>
+      <h6>Contact</h6>
+      <a href="mailto:mnoailabs@gmail.com">mnoailabs@gmail.com</a>
+      <a href="tel:+8801629472747">01629 472747</a>
+      <a href="../index.html#contact">Start a project</a>
+      <span class="footer-addr">Khulna, Bangladesh</span>
+    </div>
+    <div>
+      <h6>Hours</h6>
+      <span class="footer-addr">Sun – Thu · 10:00 – 19:00</span>
+      <span class="footer-addr">By appointment on Fri / Sat</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year">2026</span> MNO AI LABS. All rights reserved.</span>
+    <span>Built with care in Bangladesh.</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>

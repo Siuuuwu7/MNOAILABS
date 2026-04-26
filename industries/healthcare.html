@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="AI for healthcare, clinics and pharma in Bangladesh — prescription OCR, imaging assistance, clinical LLM copilots, Bangla patient chatbots and pharma ops automation." />
+<title>Healthcare &amp; Pharma — MNO AI LABS</title>
+<link rel="icon" type="image/png" href="../logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="noise"></div>
+<div class="grid-bg"></div>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <img src="../logo.png" alt="MNO AI LABS" />
+      <span>MNO <b>AI</b> LABS</span>
+    </a>
+    <nav class="nav-links">
+      <a href="../index.html#services" data-hover>Services</a>
+      <a href="../index.html#industries" data-hover>Industries</a>
+      <a href="../index.html#capabilities" data-hover>Capabilities</a>
+      <a href="../index.html#process" data-hover>Process</a>
+      <a href="../index.html#contact" data-hover>Contact</a>
+    </nav>
+    <a href="../index.html#contact" class="nav-cta" data-hover>
+      <span>Start a project</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <nav>
+    <a href="../index.html#services">Services</a>
+    <a href="../index.html#industries">Industries</a>
+    <a href="../index.html#capabilities">Capabilities</a>
+    <a href="../index.html#process">Process</a>
+    <a href="../index.html#contact">Contact</a>
+    <a href="../index.html#contact" class="mobile-cta">Start a project →</a>
+  </nav>
+</div>
+
+<section class="sub-hero">
+  <div class="breadcrumb">
+    <a href="../index.html">Home</a>
+    <span class="sep">/</span>
+    <a href="../index.html#industries">Industries</a>
+    <span class="sep">/</span>
+    <span>Healthcare &amp; Pharma</span>
+  </div>
+  <div class="sub-hero-grid">
+    <div>
+      <span class="industry-tag">Hospitals · Clinics · Diagnostics · Pharma</span>
+      <h1>Care at scale, with <i>zero compromise</i>.</h1>
+      <p class="sub-lead">
+        Paperwork eats hours that belong to patients. We build private,
+        clinician-supervised AI — vision, LLM, Bangla voice — that gives
+        providers back their time and gives patients clearer, safer care.
+      </p>
+      <div class="sub-hero-cta">
+        <a href="../index.html#contact" class="btn btn-primary" data-hover>
+          <span>Talk to us</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#usecases" class="btn btn-ghost" data-hover><span>See use cases</span></a>
+      </div>
+    </div>
+    <div class="sub-hero-visual">
+      <span class="visual-tag"><span class="dot"></span> Private · on-prem ready</span>
+      <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1400&q=80" alt="Healthcare" />
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:60px">
+  <div class="feature-row">
+    <div>
+      <span class="industry-tag">Why this, why now</span>
+      <h3>The bottleneck isn't expertise. It's paperwork, translation and time.</h3>
+      <p>Bangladeshi clinicians see extraordinary volumes of patients. Most of the friction isn't diagnostic — it's dictating notes, explaining prescriptions, translating English instructions into Bangla, and chasing follow-ups. That's exactly where careful, clinician-supervised AI shines.</p>
+      <ul>
+        <li>Always clinician-in-the-loop; AI never acts alone on clinical decisions</li>
+        <li>Private, on-prem deployment with full audit logs</li>
+        <li>Bangla-first for patients; English-friendly for clinicians</li>
+        <li>Built to complement your HIS / EMR / LIS, not replace them</li>
+      </ul>
+    </div>
+    <div class="media-stage">
+      <span class="tag">Bangla intake bot · 24×7</span>
+      <img src="https://images.unsplash.com/photo-1504813184591-01572f98c85f?w=1400&q=80" alt="Patient intake" />
+    </div>
+  </div>
+</section>
+
+<section class="section" id="usecases">
+  <div class="section-header">
+    <div class="eyebrow"><span></span> 01 — Use cases</div>
+    <h2 class="section-title reveal">Care, <i>documented automatically</i>.</h2>
+  </div>
+
+  <h3 style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;margin:10px 0 22px;color:var(--ink-dim)">Vision &amp; imaging</h3>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Vision</span>
+      <h4>Prescription &amp; handwriting OCR</h4>
+      <p>Digitize hand-written prescriptions into structured records — drug, dose, route, frequency, duration — with clear confidence indicators.</p>
+      <div class="uc-tech"><span>OCR</span><span>Medical NER</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> Vision</span>
+      <h4>Radiology triage assistant</h4>
+      <p>Highlight suspicious chest X-ray findings (consolidation, effusion, cardiomegaly) to prioritise reporting — always reviewed by the radiologist.</p>
+      <div class="uc-tech"><span>CNN</span><span>PACS</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> Vision</span>
+      <h4>Dermatology &amp; wound tracking</h4>
+      <p>Smartphone photos for skin lesion categorisation and wound-healing progress over time — for GPs, home-care and telederm.</p>
+      <div class="uc-tech"><span>CV</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Vision</span>
+      <h4>Fundus / retina screening</h4>
+      <p>Diabetic retinopathy and referable-eye-disease screening from retinal images at primary-care and community camps.</p>
+      <div class="uc-tech"><span>CNN</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> Vision</span>
+      <h4>Lab report digitization</h4>
+      <p>Parse lab PDFs and photos — CBC, LFT, KFT, lipid — into structured values, trend charts and plain-Bangla patient summaries.</p>
+      <div class="uc-tech"><span>OCR</span><span>Tables</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> Vision</span>
+      <h4>ID &amp; insurance card capture</h4>
+      <p>At registration — NID, passport, insurance card are photographed once, then OCR'd into the record; no manual re-typing.</p>
+      <div class="uc-tech"><span>OCR</span></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;margin:60px 0 22px;color:var(--ink-dim)">Clinical LLM copilots</h3>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Voice LLM</span>
+      <h4>Ambient note writing</h4>
+      <p>With the patient's consent, the conversation is transcribed and an LLM drafts a structured SOAP note for the clinician to review, edit and sign.</p>
+      <div class="uc-tech"><span>ASR</span><span>LLM</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> LLM</span>
+      <h4>Discharge summary generator</h4>
+      <p>Combine admission, procedure and investigation notes into a clear English discharge summary plus a plain-Bangla patient version.</p>
+      <div class="uc-tech"><span>LLM</span><span>Summarization</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> LLM</span>
+      <h4>Triage / protocol assistant</h4>
+      <p>Helps casualty and OPD staff follow internal protocols — e.g. sepsis, chest-pain, stroke windows — with a visible rationale for every suggestion.</p>
+      <div class="uc-tech"><span>RAG</span><span>Rules</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> LLM</span>
+      <h4>Drug-interaction &amp; dose checker</h4>
+      <p>Flag high-risk interactions and dosage anomalies as the prescription is written; all recommendations are clinician-reviewed.</p>
+      <div class="uc-tech"><span>RxNorm</span><span>LLM</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> LLM</span>
+      <h4>Case-note search &amp; timeline</h4>
+      <p>"Show me this patient's HbA1c trend and every time dose was changed" — an LLM answers over the EMR, grounded in the source notes.</p>
+      <div class="uc-tech"><span>RAG</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> LLM</span>
+      <h4>Coding &amp; billing support</h4>
+      <p>Suggests ICD-10 / CPT codes from the clinician's note, explains the reasoning, and drafts the claim — audit-trailed for billing teams.</p>
+      <div class="uc-tech"><span>LLM</span><span>Codes</span></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;margin:60px 0 22px;color:var(--ink-dim)">Patient engagement · Bangla-first</h3>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> LLM · Voice</span>
+      <h4>Bangla intake chatbot</h4>
+      <p>Patients describe symptoms in Bangla text or voice; the bot collects a structured history, red-flags emergencies, and hands over to a clinician.</p>
+      <div class="uc-tech"><span>ASR</span><span>LLM</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> LLM</span>
+      <h4>Prescription explainer</h4>
+      <p>Patients photograph their prescription and receive a clear Bangla explanation — what each medicine does, how to take it, what to watch for.</p>
+      <div class="uc-tech"><span>OCR</span><span>LLM</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> LLM</span>
+      <h4>Appointment &amp; adherence reminders</h4>
+      <p>Personalized WhatsApp / SMS / voice reminders for visits and medications — with gentle escalation if the patient misses them.</p>
+      <div class="uc-tech"><span>Segmentation</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> LLM</span>
+      <h4>Telehealth triage &amp; handover</h4>
+      <p>Pre-consult intake via chat; the doctor joins with a ready-made summary, vitals, history and suggested questions.</p>
+      <div class="uc-tech"><span>LLM</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> LLM</span>
+      <h4>Patient education content</h4>
+      <p>Gen-AI produces condition-specific, Bangla, low-literacy-friendly content (diabetes, BP, asthma, antenatal) in text, audio or short video.</p>
+      <div class="uc-tech"><span>LLM</span><span>TTS</span></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;margin:60px 0 22px;color:var(--ink-dim)">Pharma &amp; MR operations</h3>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> LLM · Voice</span>
+      <h4>Medical Rep visit reports</h4>
+      <p>MRs dictate a short Bangla voice-note after each doctor visit; an LLM writes a structured CRM report with next-action suggestions.</p>
+      <div class="uc-tech"><span>ASR</span><span>LLM</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> Vision</span>
+      <h4>Pharmacy shelf &amp; stock vision</h4>
+      <p>Phone photos of pharmacy shelves → detect out-of-stocks, competitor share and planogram compliance, for field-force and trade-marketing teams.</p>
+      <div class="uc-tech"><span>Detection</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> LLM</span>
+      <h4>Literature &amp; dossier RAG</h4>
+      <p>Private assistant over your drug dossiers, clinical papers and internal protocols, answering medical-information queries with citations.</p>
+      <div class="uc-tech"><span>RAG</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Gen-AI</span>
+      <h4>Compliant marketing content</h4>
+      <p>On-brand and regulation-aware detailing decks, visual aids, brochures and social posts, drafted in English and Bangla.</p>
+      <div class="uc-tech"><span>LLM</span><span>Diffusion</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-header">
+    <div class="eyebrow"><span></span> 02 — Pipeline</div>
+    <h2 class="section-title reveal">Private by default, <i>clinician-supervised by design</i>.</h2>
+  </div>
+  <div class="pipeline">
+    <div class="pipe-step">
+      <div class="n">01 · INGEST</div>
+      <h5>Prescriptions, notes, images</h5>
+      <p>Scanned prescriptions, dictations, EMR notes, lab PDFs, radiology images, patient chats — all with consent &amp; access logging.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">02 · PERCEIVE</div>
+      <h5>Vision + speech + NER</h5>
+      <p>OCR, ASR, medical NER and imaging models extract structured clinical facts.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">03 · REASON</div>
+      <h5>Clinical logic</h5>
+      <p>Protocols, drug databases and RAG over your own documents produce suggestions — with sources.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">04 · ACT</div>
+      <h5>Draft + clinician review</h5>
+      <p>AI drafts notes, summaries, patient replies; clinicians review and sign. Nothing goes out unreviewed.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">05 · AUDIT</div>
+      <h5>Every prompt, every decision</h5>
+      <p>Full audit trail of prompts, evidence, edits and final decisions — suitable for hospital compliance and regulators.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="gallery">
+    <figure><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1400&q=80" alt="Clinician"><figcaption>Clinician workflow</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=900&q=80" alt="Radiology"><figcaption>Radiology reading room</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1579165466991-467135ad3110?w=900&q=80" alt="Lab"><figcaption>Diagnostic lab</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=900&q=80" alt="Pharmacy"><figcaption>Pharmacy shelf vision</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=900&q=80" alt="Patient"><figcaption>Patient education</figcaption></figure>
+  </div>
+</section>
+
+<section class="section cta-section">
+  <div class="cta-inner">
+    <div class="cta-ornament"></div>
+    <span class="eyebrow center"><span></span> Let's build</span>
+    <h2 class="cta-title">Clinician-first AI, <br /><i class="gradient-text">on your infrastructure.</i></h2>
+    <p class="cta-sub">Hospital, clinic, diagnostic or pharma — we'll scope a private AI program that fits your IT, your workflows and your regulator.</p>
+    <a href="../index.html#contact" class="btn btn-primary" data-hover>
+      <span>Start a conversation</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+    <div class="contact-alt">Or email us at <a href="mailto:mnoailabs@gmail.com">mnoailabs@gmail.com</a></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="../logo.png" alt="MNO AI LABS" />
+      <span>MNO <b>AI</b> LABS</span>
+    </div>
+    <div class="footer-tagline">Industrial AI, built in Bangladesh.</div>
+  </div>
+  <div class="footer-cols">
+    <div>
+      <h6>Industries</h6>
+      <a href="industrial-monitoring.html">Industrial Monitoring</a>
+      <a href="manufacturing.html">RMG &amp; Manufacturing</a>
+      <a href="finance.html">Finance &amp; Fintech</a>
+      <a href="ecommerce.html">E-commerce</a>
+      <a href="agriculture.html">Agriculture</a>
+      <a href="healthcare.html">Healthcare</a>
+    </div>
+    <div>
+      <h6>Services</h6>
+      <a href="../index.html#services">Agents</a>
+      <a href="../index.html#services">Vision</a>
+      <a href="../index.html#services">LLM &amp; RAG</a>
+      <a href="../index.html#services">Analytics</a>
+    </div>
+    <div>
+      <h6>Contact</h6>
+      <a href="mailto:mnoailabs@gmail.com">mnoailabs@gmail.com</a>
+      <a href="tel:+8801629472747">01629 472747</a>
+      <a href="../index.html#contact">Start a project</a>
+      <span class="footer-addr">Khulna, Bangladesh</span>
+    </div>
+    <div>
+      <h6>Hours</h6>
+      <span class="footer-addr">Sun – Thu · 10:00 – 19:00</span>
+      <span class="footer-addr">By appointment on Fri / Sat</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year">2026</span> MNO AI LABS. All rights reserved.</span>
+    <span>Built with care in Bangladesh.</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>

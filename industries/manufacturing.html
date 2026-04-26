@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="AI automation for RMG and Manufacturing in Bangladesh — fabric defect vision, tech-pack generators, merchandiser copilots, gen-AI for buyer decks." />
+<title>RMG &amp; Manufacturing — MNO AI LABS</title>
+<link rel="icon" type="image/png" href="../logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="noise"></div>
+<div class="grid-bg"></div>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <img src="../logo.png" alt="MNO AI LABS" />
+      <span>MNO <b>AI</b> LABS</span>
+    </a>
+    <nav class="nav-links">
+      <a href="../index.html#services" data-hover>Services</a>
+      <a href="../index.html#industries" data-hover>Industries</a>
+      <a href="../index.html#capabilities" data-hover>Capabilities</a>
+      <a href="../index.html#process" data-hover>Process</a>
+      <a href="../index.html#contact" data-hover>Contact</a>
+    </nav>
+    <a href="../index.html#contact" class="nav-cta" data-hover>
+      <span>Start a project</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <nav>
+    <a href="../index.html#services">Services</a>
+    <a href="../index.html#industries">Industries</a>
+    <a href="../index.html#capabilities">Capabilities</a>
+    <a href="../index.html#process">Process</a>
+    <a href="../index.html#contact">Contact</a>
+    <a href="../index.html#contact" class="mobile-cta">Start a project →</a>
+  </nav>
+</div>
+
+<section class="sub-hero">
+  <div class="breadcrumb">
+    <a href="../index.html">Home</a>
+    <span class="sep">/</span>
+    <a href="../index.html#industries">Industries</a>
+    <span class="sep">/</span>
+    <span>RMG &amp; Manufacturing</span>
+  </div>
+  <div class="sub-hero-grid">
+    <div>
+      <span class="industry-tag">RMG · Textiles · Manufacturing</span>
+      <h1>AI for the <i>engine room</i> of Bangladesh's economy.</h1>
+      <p class="sub-lead">
+        Ready-made garments and manufacturing are Bangladesh's heart. We build
+        vision-driven QC, gen-AI tech-packs and buyer decks, and LLM copilots
+        for merchandisers and compliance — so your lines run tighter and your
+        paperwork stops bleeding margin.
+      </p>
+      <div class="sub-hero-cta">
+        <a href="../index.html#contact" class="btn btn-primary" data-hover>
+          <span>Book a factory walkthrough</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#usecases" class="btn btn-ghost" data-hover><span>See use cases</span></a>
+      </div>
+    </div>
+    <div class="sub-hero-visual">
+      <span class="visual-tag"><span class="dot"></span> Fabric QC · live</span>
+      <img src="https://images.unsplash.com/photo-1556139943-4bdca53adf1e?w=1400&q=80" alt="Garments factory" />
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:60px">
+  <div class="feature-row">
+    <div>
+      <span class="industry-tag">Why this, why now</span>
+      <h3>Margin lives in the details. AI finds them faster than people can.</h3>
+      <p>RMG competes on thin margins and tight lead times. The wins aren't in one big transformation — they're in hundreds of small improvements across QC, sampling, merchandising and compliance. AI is the fastest tool we've seen to capture them, with minimal disruption to existing workflows.</p>
+      <ul>
+        <li>Catch defects before they leave the line</li>
+        <li>Draft tech packs, BOMs and buyer decks in hours, not days</li>
+        <li>Free merchandisers from inbox triage</li>
+        <li>Automate compliance evidence for buyers</li>
+      </ul>
+    </div>
+    <div class="media-stage">
+      <span class="tag">Sewing line · vision QC</span>
+      <img src="https://images.unsplash.com/photo-1586336900265-3b17b1d3b7a0?w=1400&q=80" alt="Garments line" />
+    </div>
+  </div>
+</section>
+
+<section class="section" id="usecases">
+  <div class="section-header">
+    <div class="eyebrow"><span></span> 01 — Use cases</div>
+    <h2 class="section-title reveal">Vision, gen-AI and LLM <i>across the operation</i>.</h2>
+  </div>
+
+  <h3 style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;margin:10px 0 22px;color:var(--ink-dim)">On the floor · Vision</h3>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Vision</span>
+      <h4>Fabric defect detection</h4>
+      <p>Holes, slubs, stains, snags, weaving faults — detected on roll or after stitching, with defect class, position and severity logged per batch.</p>
+      <div class="uc-tech"><span>Anomaly det.</span><span>Per-SKU tuning</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> Vision</span>
+      <h4>Stitch quality inspection</h4>
+      <p>Missing, skipped or broken stitches, thread tension issues, seam alignment — flagged with images for supervisor review.</p>
+      <div class="uc-tech"><span>High-res CV</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> Vision</span>
+      <h4>Color &amp; shade matching</h4>
+      <p>Compare to golden samples under your lightbox; LLM writes the batch QC note and flags shade drift buyers won't accept.</p>
+      <div class="uc-tech"><span>ΔE</span><span>Lighting norm.</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Vision</span>
+      <h4>Print &amp; embroidery verification</h4>
+      <p>Compare each piece to the artwork — placement, orientation, size — catches screen-print and embroidery errors before packing.</p>
+      <div class="uc-tech"><span>Template match</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> Vision</span>
+      <h4>Cutting layout check</h4>
+      <p>Automated pattern verification — catches misalignment, flipped panels, wrong grain direction before the cutter ruins a roll.</p>
+      <div class="uc-tech"><span>Keypoint CV</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> Vision</span>
+      <h4>Production line counting</h4>
+      <p>Accurate per-operator, per-line piece counts without manual logging. Feed OEE dashboards and target-vs-actual alerts in real time.</p>
+      <div class="uc-tech"><span>Tracking</span><span>OEE</span></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;margin:60px 0 22px;color:var(--ink-dim)">In the office · Gen-AI &amp; LLM</h3>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Gen-AI + LLM</span>
+      <h4>Tech-pack generator</h4>
+      <p>From a reference image or moodboard, generate first-draft tech packs — BOM, measurements, construction notes and ready-to-edit buyer artwork.</p>
+      <div class="uc-tech"><span>Diffusion</span><span>LLM</span><span>PDF/XLS</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> LLM</span>
+      <h4>Merchandiser copilot</h4>
+      <p>Draft replies to buyer emails, chase suppliers, summarize long RFQ threads, keep a live status per PO — all grounded in your own merchandising history.</p>
+      <div class="uc-tech"><span>RAG</span><span>Email/Gmail</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> LLM + RAG</span>
+      <h4>Compliance evidence copilot</h4>
+      <p>Answer buyer questionnaires automatically from your compliance library — audits, certifications, inspection reports — with citations.</p>
+      <div class="uc-tech"><span>Vector store</span><span>Audit trail</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Gen-AI</span>
+      <h4>Buyer deck generator</h4>
+      <p>Turn capability info and style catalogues into polished buyer decks — on-brand, on-message, in hours instead of days.</p>
+      <div class="uc-tech"><span>Diffusion</span><span>PPTX</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> LLM</span>
+      <h4>RFQ &amp; costing assistant</h4>
+      <p>Parse buyer RFQs into structured specs, pull last-known costs per fabric/trim, and produce a first-draft costing sheet for the merchandiser.</p>
+      <div class="uc-tech"><span>LLM</span><span>Excel sync</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> LLM + Speech</span>
+      <h4>Bangla voice production reports</h4>
+      <p>Floor supervisors dictate updates in Bangla on their phones; the LLM structures them into production reports and routes by line.</p>
+      <div class="uc-tech"><span>Whisper</span><span>Bangla ASR</span></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;margin:60px 0 22px;color:var(--ink-dim)">Marketing &amp; buyer engagement</h3>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Gen-AI</span>
+      <h4>Garment lookbook generator</h4>
+      <p>Auto-compose seasonal lookbooks: product photos on diffusion-generated models, in curated settings, on-brand and on-budget.</p>
+      <div class="uc-tech"><span>Diffusion</span><span>Brand LoRA</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> Gen-AI</span>
+      <h4>Marketing copy in 3 languages</h4>
+      <p>Bangla, English and a third market language of your choice — product descriptions, ad copy and social captions for every style.</p>
+      <div class="uc-tech"><span>LLM</span><span>Translation</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> LLM</span>
+      <h4>Buyer intelligence</h4>
+      <p>Monitor buyer news, assortments and trends. A weekly LLM-written brief tells merchandisers what's moving and who to call.</p>
+      <div class="uc-tech"><span>Web scraping</span><span>Summaries</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-header">
+    <div class="eyebrow"><span></span> 02 — Pipeline</div>
+    <h2 class="section-title reveal">From fabric roll to <i>buyer-ready deck</i>.</h2>
+    <p class="section-sub reveal">The same pipeline pattern we use everywhere — mapped to an RMG operation.</p>
+  </div>
+  <div class="pipeline">
+    <div class="pipe-step">
+      <div class="n">01 · INGEST</div>
+      <h5>Cameras, ERP, email</h5>
+      <p>Vision from floor cameras, ERP records (cut, sew, finish), buyer emails and merchandiser notes.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">02 · PERCEIVE</div>
+      <h5>Vision + NLP</h5>
+      <p>Defect classifiers, print verification, piece counts, plus LLM extraction on emails and RFQ docs.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">03 · REASON</div>
+      <h5>Quality + merch logic</h5>
+      <p>Per-SKU, per-buyer rules trigger accept/reject, re-work, chase, or escalation events.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">04 · ACT</div>
+      <h5>Line + inbox</h5>
+      <p>Line stacks, ERP writes, email drafts, merchandiser tickets — the system nudges the work forward.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">05 · AUTOMATE</div>
+      <h5>LLM + Gen-AI</h5>
+      <p>Shift reports, tech packs, lookbooks and buyer decks — drafted by LLM + diffusion, reviewed by humans.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="gallery">
+    <figure><img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=1400&q=80" alt="Textile"><figcaption>Fabric inspection</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1558174685-430919a96c8d?w=900&q=80" alt="Cutting"><figcaption>Cutting layout</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?w=900&q=80" alt="Sewing"><figcaption>Sewing line</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1558769132-92e06313a2d0?w=900&q=80" alt="Finish"><figcaption>Finishing &amp; QC</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=900&q=80" alt="Office"><figcaption>Merchandiser copilot</figcaption></figure>
+  </div>
+</section>
+
+<section class="section cta-section">
+  <div class="cta-inner">
+    <div class="cta-ornament"></div>
+    <span class="eyebrow center"><span></span> Let's build</span>
+    <h2 class="cta-title">Walk us through your lines. <br /><i class="gradient-text">We'll walk out with a plan.</i></h2>
+    <p class="cta-sub">Tell us what's costing you margin. We'll come back with a short proposal within one business day.</p>
+    <a href="../index.html#contact" class="btn btn-primary" data-hover>
+      <span>Start a conversation</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+    <div class="contact-alt">Or email us at <a href="mailto:mnoailabs@gmail.com">mnoailabs@gmail.com</a></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="../logo.png" alt="MNO AI LABS" />
+      <span>MNO <b>AI</b> LABS</span>
+    </div>
+    <div class="footer-tagline">Industrial AI, built in Bangladesh.</div>
+  </div>
+  <div class="footer-cols">
+    <div>
+      <h6>Industries</h6>
+      <a href="industrial-monitoring.html">Industrial Monitoring</a>
+      <a href="manufacturing.html">RMG &amp; Manufacturing</a>
+      <a href="finance.html">Finance &amp; Fintech</a>
+      <a href="ecommerce.html">E-commerce</a>
+      <a href="agriculture.html">Agriculture</a>
+      <a href="healthcare.html">Healthcare</a>
+    </div>
+    <div>
+      <h6>Services</h6>
+      <a href="../index.html#services">Agents</a>
+      <a href="../index.html#services">Vision</a>
+      <a href="../index.html#services">LLM &amp; RAG</a>
+      <a href="../index.html#services">Analytics</a>
+    </div>
+    <div>
+      <h6>Contact</h6>
+      <a href="mailto:mnoailabs@gmail.com">mnoailabs@gmail.com</a>
+      <a href="tel:+8801629472747">01629 472747</a>
+      <a href="../index.html#contact">Start a project</a>
+      <span class="footer-addr">Khulna, Bangladesh</span>
+    </div>
+    <div>
+      <h6>Hours</h6>
+      <span class="footer-addr">Sun – Thu · 10:00 – 19:00</span>
+      <span class="footer-addr">By appointment on Fri / Sat</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year">2026</span> MNO AI LABS. All rights reserved.</span>
+    <span>Built with care in Bangladesh.</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>

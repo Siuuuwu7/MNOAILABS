@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Industrial AI monitoring by MNO AI LABS — employee check-in, PPE detection, quality control, productivity analytics and LLM-powered shift reports for factories in Bangladesh." />
+<title>Industrial Monitoring &amp; Quality Control — MNO AI LABS</title>
+<link rel="icon" type="image/png" href="../logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- Backgrounds -->
+<div class="noise"></div>
+<div class="grid-bg"></div>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<!-- Nav -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <img src="../logo.png" alt="MNO AI LABS" />
+      <span>MNO <b>AI</b> LABS</span>
+    </a>
+    <nav class="nav-links">
+      <a href="../index.html#services" data-hover>Services</a>
+      <a href="../index.html#industries" data-hover>Industries</a>
+      <a href="../index.html#capabilities" data-hover>Capabilities</a>
+      <a href="../index.html#process" data-hover>Process</a>
+      <a href="../index.html#contact" data-hover>Contact</a>
+    </nav>
+    <a href="../index.html#contact" class="nav-cta" data-hover>
+      <span>Start a project</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <nav>
+    <a href="../index.html#services">Services</a>
+    <a href="../index.html#industries">Industries</a>
+    <a href="../index.html#capabilities">Capabilities</a>
+    <a href="../index.html#process">Process</a>
+    <a href="../index.html#contact">Contact</a>
+    <a href="../index.html#contact" class="mobile-cta">Start a project →</a>
+  </nav>
+</div>
+
+<!-- Hero -->
+<section class="sub-hero">
+  <div class="breadcrumb">
+    <a href="../index.html">Home</a>
+    <span class="sep">/</span>
+    <a href="../index.html#industries">Industries</a>
+    <span class="sep">/</span>
+    <span>Industrial Monitoring &amp; QC</span>
+  </div>
+
+  <div class="sub-hero-grid">
+    <div>
+      <span class="industry-tag">Flagship · Vision + LLM + Edge</span>
+      <h1>Vision-led automation <i>for every square meter</i> of your plant.</h1>
+      <p class="sub-lead">
+        Turn the cameras you already have into a 24/7 AI workforce — for
+        attendance, PPE compliance, safety, quality control and productivity.
+        Add an LLM layer on top and your shift reports, maintenance logs and
+        operator queries write themselves.
+      </p>
+      <div class="sub-hero-cta">
+        <a href="../index.html#contact" class="btn btn-primary" data-hover>
+          <span>Book a factory walkthrough</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#usecases" class="btn btn-ghost" data-hover>
+          <span>See use cases</span>
+        </a>
+      </div>
+    </div>
+    <div class="sub-hero-visual">
+      <span class="visual-tag"><span class="dot"></span> Live floor · 4 cameras · 12 events/min</span>
+      <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=1400&q=80">
+        <source src="https://cdn.pixabay.com/video/2024/06/20/217221_large.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- Why it matters -->
+<section class="section" style="padding-top:60px">
+  <div class="feature-row">
+    <div>
+      <span class="industry-tag">Why this, why now</span>
+      <h3>Your cameras are already there. They just need a brain.</h3>
+      <p>Most Bangladeshi factories, warehouses and offices have already invested in CCTV. What they're missing is a system that actually <em>understands</em> the footage — who came in, who skipped PPE, which station is slow today, which product has a defect, which machine is about to fail.</p>
+      <p>We add that brain. On-device, on-prem or hybrid — so nothing sensitive leaves your network, and the system keeps running even when the internet doesn't.</p>
+      <ul>
+        <li>Plug into any RTSP / ONVIF camera — no rip-and-replace</li>
+        <li>Runs on Jetson, commodity GPUs, or your existing servers</li>
+        <li>Works offline; syncs reports when connectivity returns</li>
+        <li>Role-based dashboards in Bangla &amp; English</li>
+      </ul>
+    </div>
+    <div class="media-stage">
+      <span class="tag">Floor camera · annotated live</span>
+      <img src="https://images.unsplash.com/photo-1581093196277-9f608bb3d4b6?w=1400&q=80" alt="Factory floor CV" />
+    </div>
+  </div>
+</section>
+
+<!-- Use cases -->
+<section class="section" id="usecases">
+  <div class="section-header">
+    <div class="eyebrow"><span></span> 01 — Use cases</div>
+    <h2 class="section-title reveal">The AI workforce <i>you deploy once</i>.</h2>
+    <p class="section-sub reveal">A menu of production-ready automations. Pick the ones that matter to you — we configure and deploy as a package.</p>
+  </div>
+
+  <!-- Human monitoring -->
+  <h3 style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;margin:10px 0 22px;color:var(--ink-dim)">Human monitoring</h3>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Vision</span>
+      <h4>Face-based employee check-in</h4>
+      <p>Walk in, get logged. Eliminates card-swapping and manual attendance sheets, with anti-spoofing via liveness detection and a Bangla + English kiosk UI.</p>
+      <div class="uc-tech"><span>Face recognition</span><span>Liveness</span><span>HR sync</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> Vision</span>
+      <h4>PPE compliance detection</h4>
+      <p>Detects helmets, high-vis vests, safety glasses, gloves, earplugs, aprons and masks. Flags violations instantly with camera + worker ID, and keeps a compliance log for audits.</p>
+      <div class="uc-tech"><span>YOLO-class</span><span>Multi-label</span><span>Shift logs</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> Vision</span>
+      <h4>Safety zone intrusion alerts</h4>
+      <p>Define virtual fences around presses, reactors, robots and forklifts. Alert on entry, loiter or unsafe proximity — with images attached for immediate supervisor action.</p>
+      <div class="uc-tech"><span>Zone polygons</span><span>SMS/Slack</span><span>Audit trail</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Vision</span>
+      <h4>Fatigue &amp; drowsiness detection</h4>
+      <p>For drivers, forklift operators and long-shift stations — blink-rate, head-pose and micro-expression cues trigger nudges before an incident.</p>
+      <div class="uc-tech"><span>Landmarks</span><span>Head pose</span><span>Alerts</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> Vision</span>
+      <h4>Fall &amp; accident detection</h4>
+      <p>Pose-based detection of falls, slips, and workers on the ground — surfacing incidents in seconds instead of finding out next shift.</p>
+      <div class="uc-tech"><span>Pose estimation</span><span>Event engine</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> Vision</span>
+      <h4>Productivity heatmaps</h4>
+      <p>Where people spend time, where queues build up, which stations are starving. Daily heatmaps turn the floor into a map of bottlenecks.</p>
+      <div class="uc-tech"><span>People tracking</span><span>Dwell time</span></div>
+    </div>
+  </div>
+
+  <!-- Quality control -->
+  <h3 style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;margin:60px 0 22px;color:var(--ink-dim)">Quality control</h3>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Vision</span>
+      <h4>On-line defect detection</h4>
+      <p>Scratches, dents, burrs, misprints, stitching errors, color drift — detected as products pass under the camera, with per-defect class and severity.</p>
+      <div class="uc-tech"><span>Instance seg.</span><span>Anomaly det.</span><span>Auto-reject</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> Vision</span>
+      <h4>Dimensional QC</h4>
+      <p>Measure parts against tolerance — width, height, hole spacing, angles — from a single overhead camera, no calipers required.</p>
+      <div class="uc-tech"><span>Edge detection</span><span>Calibration</span><span>Pass/Fail</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> Vision</span>
+      <h4>Assembly completeness</h4>
+      <p>Is every screw, cable, label, and component where it should be? Last-mile check before packing — catches omissions before they ship.</p>
+      <div class="uc-tech"><span>Template match</span><span>Multi-object</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Vision</span>
+      <h4>Print &amp; label verification</h4>
+      <p>Barcodes, batch codes, expiry dates — OCR + checksum validation to stop mislabeled goods from leaving the plant.</p>
+      <div class="uc-tech"><span>OCR</span><span>Barcode</span><span>Rules</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> Vision + LLM</span>
+      <h4>Color &amp; shade matching</h4>
+      <p>Compare against golden samples under your lighting conditions — for textiles, paint, plastics and print. LLM writes the QC comment for the batch sheet.</p>
+      <div class="uc-tech"><span>ΔE analysis</span><span>Lighting norm.</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> Vision</span>
+      <h4>Surface anomaly detection</h4>
+      <p>For glass, metal, fabric and ceramics — unsupervised anomaly models that learn "normal" from good samples and catch the weird stuff.</p>
+      <div class="uc-tech"><span>PatchCore</span><span>Autoencoders</span></div>
+    </div>
+  </div>
+
+  <!-- Operations & LLM -->
+  <h3 style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;margin:60px 0 22px;color:var(--ink-dim)">Operations &amp; LLM automation</h3>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Vision + LLM</span>
+      <h4>Legacy dashboard OCR</h4>
+      <p>Point a camera at your analog gauge, seven-segment display or old SCADA screen. We extract the reading in real time — and an LLM explains the trend.</p>
+      <div class="uc-tech"><span>OCR</span><span>Time-series</span><span>Chat</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> LLM + Speech</span>
+      <h4>Voice-activated maintenance logs</h4>
+      <p>Operators describe issues in Bangla or English; the agent structures a log entry, tags the machine, and raises a ticket automatically.</p>
+      <div class="uc-tech"><span>Whisper</span><span>Bangla ASR</span><span>CMMS sync</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> LLM</span>
+      <h4>Auto-generated shift reports</h4>
+      <p>At end of shift, the LLM writes the report: PPE violations, defects caught, cycle times, incidents, personnel, plus a plain-language summary for the manager.</p>
+      <div class="uc-tech"><span>RAG</span><span>Templates</span><span>Bangla/EN</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> LLM + RAG</span>
+      <h4>Maintenance copilot</h4>
+      <p>Chat with your machine history: "When did line 4 last fail?" "What spare parts did we use on the boiler last quarter?" Answers with sources, in seconds.</p>
+      <div class="uc-tech"><span>Vector store</span><span>SQL-aware</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> Vision + ML</span>
+      <h4>Cycle-time &amp; throughput analytics</h4>
+      <p>Automatic per-station, per-operator cycle-time measurement. Pair it with OEE and the bottleneck practically points at itself.</p>
+      <div class="uc-tech"><span>Action detect.</span><span>OEE</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> Vision</span>
+      <h4>Inventory &amp; shelf counting</h4>
+      <p>Count cartons, pallets, rolls or SKUs from a single overhead shot. Replace weekly manual counts with a daily camera pass.</p>
+      <div class="uc-tech"><span>Detection</span><span>Batch jobs</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Vision</span>
+      <h4>Theft &amp; anomaly alerts</h4>
+      <p>Abnormal after-hours movement, unusual object handling, unregistered entries — surfaced to security with timestamped clips.</p>
+      <div class="uc-tech"><span>Anomaly</span><span>Time rules</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> LLM</span>
+      <h4>HSE policy chatbot</h4>
+      <p>A private chatbot trained on your HSE policies, SOPs and incident history — staff can ask "what should I do if ..." in Bangla, with citations.</p>
+      <div class="uc-tech"><span>RAG</span><span>Bangla</span><span>Private</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> Gen-AI</span>
+      <h4>Auto training material</h4>
+      <p>Gen-AI turns your SOPs into short-form video scripts, illustrated posters and Bangla voice-overs — so onboarding new operators is faster and cheaper.</p>
+      <div class="uc-tech"><span>TTS Bangla</span><span>Stable Diffusion</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Pipeline -->
+<section class="section">
+  <div class="section-header">
+    <div class="eyebrow"><span></span> 02 — Pipeline</div>
+    <h2 class="section-title reveal">How a frame becomes an <i>action</i>.</h2>
+    <p class="section-sub reveal">The same five-stage pipeline underpins every use case on this page — a predictable, debuggable path from pixels to decisions.</p>
+  </div>
+
+  <div class="pipeline">
+    <div class="pipe-step">
+      <div class="n">01 · INGEST</div>
+      <h5>Camera stream</h5>
+      <p>RTSP / ONVIF from any CCTV. No replacements, no rewiring. Frames sampled at the rate each task needs.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">02 · PERCEIVE</div>
+      <h5>Edge inference</h5>
+      <p>Detection, pose, OCR and anomaly models run on a Jetson or local GPU. Nothing leaves your network by default.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">03 · REASON</div>
+      <h5>Event engine</h5>
+      <p>Rules + ML turn raw detections into events — "PPE violation", "zone breach", "defect class 3" — with context and severity.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">04 · ACT</div>
+      <h5>Alerts &amp; logs</h5>
+      <p>SMS, WhatsApp, Slack, email, webhooks, sirens, light stacks or ERP/CMMS writes — whatever your ops team already uses.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">05 · AUTOMATE</div>
+      <h5>LLM layer</h5>
+      <p>A private LLM sits on top: answers questions in Bangla/English, writes shift reports, drafts maintenance tickets, and powers the HSE chatbot.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery / real imagery -->
+<section class="section">
+  <div class="section-header">
+    <div class="eyebrow"><span></span> 03 — In the wild</div>
+    <h2 class="section-title reveal">Built for real factories, <i>not demos</i>.</h2>
+    <p class="section-sub reveal">Our systems are designed for the lighting, dust, noise and chaos of real production floors.</p>
+  </div>
+  <div class="gallery">
+    <figure>
+      <img src="https://images.unsplash.com/photo-1581093588401-fbb62a02f120?w=1400&q=80" alt="Factory floor" />
+      <figcaption>QC · Line 3 · 98 parts / min</figcaption>
+    </figure>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=900&q=80" alt="PPE" />
+      <figcaption>PPE · helmets + vests</figcaption>
+    </figure>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=900&q=80" alt="Inspection" />
+      <figcaption>Assembly check</figcaption>
+    </figure>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=900&q=80" alt="Warehouse" />
+      <figcaption>Shelf count</figcaption>
+    </figure>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?w=900&q=80" alt="Control room" />
+      <figcaption>LLM copilot · control room</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- Feature rows deep dive -->
+<section class="section">
+  <div class="feature-row">
+    <div>
+      <span class="industry-tag">Deep dive · Human monitoring</span>
+      <h3>Attendance, safety and behaviour — from the cameras you already own.</h3>
+      <p>A single vision pipeline covers the full human-monitoring stack: who entered, when, with what PPE, through which zones, in what state. Reports show up in Bangla or English for shop-floor supervisors, and roll up into daily HR/HSE summaries for the director.</p>
+      <ul>
+        <li>Anti-spoof face recognition with liveness</li>
+        <li>Per-worker PPE compliance over a shift</li>
+        <li>Restricted-zone policies configurable without code</li>
+        <li>Fatigue + posture cues surfaced as nudges, not punishments</li>
+      </ul>
+    </div>
+    <div class="media-stage">
+      <span class="tag">Human detection + PPE</span>
+      <img src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?w=1400&q=80" alt="PPE detection" />
+    </div>
+  </div>
+
+  <div class="feature-row reverse">
+    <div class="media-stage">
+      <span class="tag">Defect detection · Line 2</span>
+      <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=1400&q=80" alt="Defect detection" />
+    </div>
+    <div>
+      <span class="industry-tag">Deep dive · Quality control</span>
+      <h3>Every unit, inspected. Every defect, traced.</h3>
+      <p>Defect classifiers run per camera, per product family. Each defect is logged with a clip, a class, a severity and the operator/station — so QA teams don't just see the problem, they see the <em>context</em>. Over time, the data powers closed-loop retraining: your model gets better the longer it runs.</p>
+      <ul>
+        <li>Scratches, dents, burrs, misprints, shade drift</li>
+        <li>Human-in-the-loop review for ambiguous cases</li>
+        <li>Continuous learning with your own labelled data</li>
+        <li>Per-SKU thresholds and buyer-specific rules</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="feature-row">
+    <div>
+      <span class="industry-tag">Deep dive · LLM automation</span>
+      <h3>The paperwork your plant has always hated — written, in seconds.</h3>
+      <p>The LLM layer sits on top of every detection, event and data point. It writes the shift report. It drafts the maintenance ticket. It answers "why did OEE drop on Tuesday?" with the clips and numbers attached. Bangla or English, your call.</p>
+      <ul>
+        <li>Shift &amp; daily production reports, auto-drafted</li>
+        <li>Maintenance ticket generation from voice notes</li>
+        <li>Private chat over your SOPs, incidents and logs</li>
+        <li>Audit-friendly trails — every answer cites its source</li>
+      </ul>
+    </div>
+    <div class="media-stage">
+      <span class="tag">LLM copilot · on-prem</span>
+      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1400&q=80" alt="LLM copilot" />
+    </div>
+  </div>
+</section>
+
+<!-- Deployment -->
+<section class="section">
+  <div class="section-header">
+    <div class="eyebrow"><span></span> 04 — Deployment</div>
+    <h2 class="section-title reveal">Deployed <i>your way</i> — edge, on-prem, hybrid.</h2>
+  </div>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Edge</span>
+      <h4>Jetson on the wall</h4>
+      <p>Small, silent, GPU-accelerated devices co-located with cameras. Great for new sites or specific zones. Works offline; syncs when the WAN is up.</p>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> On-prem</span>
+      <h4>Server in your rack</h4>
+      <p>A central GPU server handles multiple cameras. Best for existing IT-managed factories. Everything stays inside your network.</p>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> Hybrid</span>
+      <h4>Edge + private cloud</h4>
+      <p>Edge handles real-time work; your private cloud does analytics, LLMs and long-term storage. Best of both — and easy to scale.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-section">
+  <div class="cta-inner">
+    <div class="cta-ornament"></div>
+    <span class="eyebrow center"><span></span> Let's build</span>
+    <h2 class="cta-title">
+      Walk us through your plant. <br /><i class="gradient-text">We'll walk out with a plan.</i>
+    </h2>
+    <p class="cta-sub">
+      Tell us what you want AI to do on your floor. We'll come back with a short proposal, timeline and pricing — usually within one business day.
+    </p>
+    <a href="../index.html#contact" class="btn btn-primary" data-hover>
+      <span>Start a conversation</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+    <div class="contact-alt">
+      Or email us at <a href="mailto:mnoailabs@gmail.com">mnoailabs@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="../logo.png" alt="MNO AI LABS" />
+      <span>MNO <b>AI</b> LABS</span>
+    </div>
+    <div class="footer-tagline">Industrial AI, built in Bangladesh.</div>
+  </div>
+  <div class="footer-cols">
+    <div>
+      <h6>Industries</h6>
+      <a href="industrial-monitoring.html">Industrial Monitoring</a>
+      <a href="manufacturing.html">RMG &amp; Manufacturing</a>
+      <a href="finance.html">Finance &amp; Fintech</a>
+      <a href="ecommerce.html">E-commerce</a>
+      <a href="agriculture.html">Agriculture</a>
+      <a href="healthcare.html">Healthcare</a>
+    </div>
+    <div>
+      <h6>Services</h6>
+      <a href="../index.html#services">Agents</a>
+      <a href="../index.html#services">Vision</a>
+      <a href="../index.html#services">LLM &amp; RAG</a>
+      <a href="../index.html#services">Analytics</a>
+    </div>
+    <div>
+      <h6>Contact</h6>
+      <a href="mailto:mnoailabs@gmail.com">mnoailabs@gmail.com</a>
+      <a href="tel:+8801629472747">01629 472747</a>
+      <a href="../index.html#contact">Start a project</a>
+      <span class="footer-addr">Khulna, Bangladesh</span>
+    </div>
+    <div>
+      <h6>Hours</h6>
+      <span class="footer-addr">Sun – Thu · 10:00 – 19:00</span>
+      <span class="footer-addr">By appointment on Fri / Sat</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year">2026</span> MNO AI LABS. All rights reserved.</span>
+    <span>Built with care in Bangladesh.</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>

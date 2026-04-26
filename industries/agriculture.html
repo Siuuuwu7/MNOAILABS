@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="AI for agriculture and agritech in Bangladesh — crop disease detection, drone vision, yield forecasting, Bangla farmer copilots and market intelligence." />
+<title>Agriculture &amp; Agritech — MNO AI LABS</title>
+<link rel="icon" type="image/png" href="../logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="noise"></div>
+<div class="grid-bg"></div>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <img src="../logo.png" alt="MNO AI LABS" />
+      <span>MNO <b>AI</b> LABS</span>
+    </a>
+    <nav class="nav-links">
+      <a href="../index.html#services" data-hover>Services</a>
+      <a href="../index.html#industries" data-hover>Industries</a>
+      <a href="../index.html#capabilities" data-hover>Capabilities</a>
+      <a href="../index.html#process" data-hover>Process</a>
+      <a href="../index.html#contact" data-hover>Contact</a>
+    </nav>
+    <a href="../index.html#contact" class="nav-cta" data-hover>
+      <span>Start a project</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <nav>
+    <a href="../index.html#services">Services</a>
+    <a href="../index.html#industries">Industries</a>
+    <a href="../index.html#capabilities">Capabilities</a>
+    <a href="../index.html#process">Process</a>
+    <a href="../index.html#contact">Contact</a>
+    <a href="../index.html#contact" class="mobile-cta">Start a project →</a>
+  </nav>
+</div>
+
+<section class="sub-hero">
+  <div class="breadcrumb">
+    <a href="../index.html">Home</a>
+    <span class="sep">/</span>
+    <a href="../index.html#industries">Industries</a>
+    <span class="sep">/</span>
+    <span>Agriculture &amp; Agritech</span>
+  </div>
+  <div class="sub-hero-grid">
+    <div>
+      <span class="industry-tag">Farms · FPOs · Agri-input · Agri-processing</span>
+      <h1>The next harvest is <i>trained, not guessed</i>.</h1>
+      <p class="sub-lead">
+        From a phone held over a rice leaf to a drone over a 50-bigha plot —
+        we build vision and Bangla LLMs that bring precision agriculture within
+        reach of small-holder farmers and agri-businesses in Bangladesh.
+      </p>
+      <div class="sub-hero-cta">
+        <a href="../index.html#contact" class="btn btn-primary" data-hover>
+          <span>Talk to us</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#usecases" class="btn btn-ghost" data-hover><span>See use cases</span></a>
+      </div>
+    </div>
+    <div class="sub-hero-visual">
+      <span class="visual-tag"><span class="dot"></span> Bangla voice · low-data ready</span>
+      <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1400&q=80" alt="Rice field" />
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:60px">
+  <div class="feature-row">
+    <div>
+      <span class="industry-tag">Why this, why now</span>
+      <h3>Smartphones reached the village. The advice didn't.</h3>
+      <p>Farmers across Bangladesh carry better cameras than most agri-officers did a decade ago. What's missing is trustworthy, Bangla-first advice that understands local crops, pests, prices and schemes. That's what we build — for agri-input companies, processors, FPOs, NGOs and government projects.</p>
+      <ul>
+        <li>Leaf photos → specific disease &amp; dose advice in Bangla</li>
+        <li>Drone &amp; phone vision for plot health, weed pressure, crop count</li>
+        <li>Market-price LLMs that pull from actual haat reports</li>
+        <li>Traceability from field to FCI, mill or buyer</li>
+      </ul>
+    </div>
+    <div class="media-stage">
+      <span class="tag">Phone vision · leaf disease</span>
+      <img src="https://images.unsplash.com/photo-1574943320219-5630bb4c2d54?w=1400&q=80" alt="Leaf" />
+    </div>
+  </div>
+</section>
+
+<section class="section" id="usecases">
+  <div class="section-header">
+    <div class="eyebrow"><span></span> 01 — Use cases</div>
+    <h2 class="section-title reveal">From leaf to <i>ledger</i>.</h2>
+  </div>
+
+  <h3 style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;margin:10px 0 22px;color:var(--ink-dim)">Vision · phone &amp; drone</h3>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Vision</span>
+      <h4>Crop disease identification</h4>
+      <p>Photograph a leaf, get a diagnosis — blast, blight, mosaic, yellowing — with a Bangla action plan and dose recommendation.</p>
+      <div class="uc-tech"><span>Fine-grained CV</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> Vision</span>
+      <h4>Pest &amp; insect ID</h4>
+      <p>Identify brown planthopper, whitefly, stem borer and others from a close-up, plus an integrated pest-management plan.</p>
+      <div class="uc-tech"><span>CV</span><span>IPM rules</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> Vision</span>
+      <h4>Weed pressure mapping</h4>
+      <p>Drone or phone video → heatmap of weed-affected zones, so spraying happens only where needed.</p>
+      <div class="uc-tech"><span>Segmentation</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Vision</span>
+      <h4>Plant count &amp; spacing</h4>
+      <p>Count saplings, check spacing, detect gaps — from a drone flyover or even a handheld phone sweep.</p>
+      <div class="uc-tech"><span>Detection</span><span>Counting</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> Vision · Satellite</span>
+      <h4>Plot boundary &amp; growth tracking</h4>
+      <p>Track crop stage (vegetative, booting, ripening) across your plots using a mix of phone check-ins and satellite time-series.</p>
+      <div class="uc-tech"><span>NDVI</span><span>Time-series</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> Vision</span>
+      <h4>Livestock health &amp; count</h4>
+      <p>Daily camera checks for cattle, poultry or shrimp farms — count, weight estimate, lameness or lesion detection.</p>
+      <div class="uc-tech"><span>CV</span><span>Tracking</span></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;margin:60px 0 22px;color:var(--ink-dim)">Forecasting &amp; farm ops</h3>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> ML</span>
+      <h4>Yield forecasting</h4>
+      <p>Per-plot yield forecast combining weather, soil, variety, plant count and health — for farmers, FPOs and buyers.</p>
+      <div class="uc-tech"><span>TS</span><span>Regression</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> ML</span>
+      <h4>Irrigation &amp; fertilizer advice</h4>
+      <p>When to water, when to top-dress — calibrated to the plot's actual stage and the weekly weather forecast.</p>
+      <div class="uc-tech"><span>Rules</span><span>Weather</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> ML</span>
+      <h4>Harvest window optimization</h4>
+      <p>Pick the harvest window that maximises grain quality and minimises weather risk, informed by real sensor and satellite data.</p>
+      <div class="uc-tech"><span>Planning</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> ML</span>
+      <h4>Shrimp / fish pond alerts</h4>
+      <p>Pond water colour, feed rate, weather — combined into daily alerts for shrimp and fish farms in the south-west.</p>
+      <div class="uc-tech"><span>CV</span><span>Rules</span></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;margin:60px 0 22px;color:var(--ink-dim)">LLM copilots · for farmers &amp; field staff</h3>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Voice LLM</span>
+      <h4>Bangla farmer voice assistant</h4>
+      <p>Ask a question in Bangla voice — "আমার ধানের পাতায় হলুদ দাগ কেন?" — get a spoken answer tailored to your crop, location and stage.</p>
+      <div class="uc-tech"><span>ASR</span><span>RAG</span><span>TTS</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> LLM</span>
+      <h4>Market price Q&amp;A</h4>
+      <p>Ask today's price of potato, paddy, shrimp at your nearest haat — answer grounded in actual market-price feeds and trends.</p>
+      <div class="uc-tech"><span>RAG</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> LLM</span>
+      <h4>Govt scheme &amp; subsidy helper</h4>
+      <p>Explains loan schemes, crop insurance, fertilizer subsidy eligibility and paperwork in simple Bangla.</p>
+      <div class="uc-tech"><span>RAG</span><span>Bangla NLP</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> LLM</span>
+      <h4>Agri-input dealer copilot</h4>
+      <p>Helps local dealers recommend the right seed, fertilizer or pesticide based on crop, stage and plot size.</p>
+      <div class="uc-tech"><span>LLM</span><span>Catalog</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> LLM</span>
+      <h4>Field officer report generator</h4>
+      <p>Field officers dictate a short Bangla voice-note per farm visit; an LLM writes the structured visit report automatically.</p>
+      <div class="uc-tech"><span>ASR</span><span>LLM</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> LLM</span>
+      <h4>Training content in Bangla</h4>
+      <p>Gen-AI produces farmer-training videos, posters and WhatsApp cards per crop, per region, in clear Bangla.</p>
+      <div class="uc-tech"><span>LLM</span><span>Gen-AI video</span></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;margin:60px 0 22px;color:var(--ink-dim)">Supply chain &amp; traceability</h3>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Vision</span>
+      <h4>Produce grading at purchase</h4>
+      <p>Phone-based quality grading for paddy, potato, mango, shrimp — at the procurement point, before weighing.</p>
+      <div class="uc-tech"><span>CV</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> Vision + LLM</span>
+      <h4>Cold-chain monitoring</h4>
+      <p>Monitor cold-storage and truck temperature, plus camera feeds, to catch excursions early and auto-generate compliance logs.</p>
+      <div class="uc-tech"><span>IoT</span><span>LLM</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> Data</span>
+      <h4>Farm-to-buyer traceability</h4>
+      <p>Every batch tracked from plot → warehouse → mill / processor → buyer, with QR-based attestations.</p>
+      <div class="uc-tech"><span>Ledger</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-header">
+    <div class="eyebrow"><span></span> 02 — Pipeline</div>
+    <h2 class="section-title reveal">From a photo of a leaf to <i>a better season</i>.</h2>
+  </div>
+  <div class="pipeline">
+    <div class="pipe-step">
+      <div class="n">01 · INGEST</div>
+      <h5>Phone, drone, sensor</h5>
+      <p>Leaf photos, field videos, drone imagery, satellite passes, weather feeds, haat prices and farmer voice notes.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">02 · PERCEIVE</div>
+      <h5>Vision + speech</h5>
+      <p>CV identifies crops, diseases, weeds, livestock; ASR transcribes Bangla speech; NLP extracts intent.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">03 · REASON</div>
+      <h5>Agronomy logic</h5>
+      <p>Combine observations with agronomy rules, historic yield data and market signals to produce advice and forecasts.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">04 · ACT</div>
+      <h5>Advice in Bangla</h5>
+      <p>Deliver plain-Bangla guidance over app, WhatsApp, IVR or SMS — optionally spoken aloud.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">05 · LEARN</div>
+      <h5>Closing the loop</h5>
+      <p>Outcomes — yield, price, disease recovery — feed back into better models and better advice next season.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="gallery">
+    <figure><img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1400&q=80" alt="Paddy"><figcaption>Paddy fields, south-west</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=900&q=80" alt="Farmer"><figcaption>Smallholder farming</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=900&q=80" alt="Drone"><figcaption>Drone agronomy</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=900&q=80" alt="Market"><figcaption>Rural market</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1472148083604-64f1084980b9?w=900&q=80" alt="Fish"><figcaption>Aquaculture</figcaption></figure>
+  </div>
+</section>
+
+<section class="section cta-section">
+  <div class="cta-inner">
+    <div class="cta-ornament"></div>
+    <span class="eyebrow center"><span></span> Let's build</span>
+    <h2 class="cta-title">Grounded in Bangladesh, <br /><i class="gradient-text">built for rural Bangladesh.</i></h2>
+    <p class="cta-sub">Whether you run an input company, a processor, an FPO or a development project — we'll design an AI stack that meets farmers where they are.</p>
+    <a href="../index.html#contact" class="btn btn-primary" data-hover>
+      <span>Start a conversation</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+    <div class="contact-alt">Or email us at <a href="mailto:mnoailabs@gmail.com">mnoailabs@gmail.com</a></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="../logo.png" alt="MNO AI LABS" />
+      <span>MNO <b>AI</b> LABS</span>
+    </div>
+    <div class="footer-tagline">Industrial AI, built in Bangladesh.</div>
+  </div>
+  <div class="footer-cols">
+    <div>
+      <h6>Industries</h6>
+      <a href="industrial-monitoring.html">Industrial Monitoring</a>
+      <a href="manufacturing.html">RMG &amp; Manufacturing</a>
+      <a href="finance.html">Finance &amp; Fintech</a>
+      <a href="ecommerce.html">E-commerce</a>
+      <a href="agriculture.html">Agriculture</a>
+      <a href="healthcare.html">Healthcare</a>
+    </div>
+    <div>
+      <h6>Services</h6>
+      <a href="../index.html#services">Agents</a>
+      <a href="../index.html#services">Vision</a>
+      <a href="../index.html#services">LLM &amp; RAG</a>
+      <a href="../index.html#services">Analytics</a>
+    </div>
+    <div>
+      <h6>Contact</h6>
+      <a href="mailto:mnoailabs@gmail.com">mnoailabs@gmail.com</a>
+      <a href="tel:+8801629472747">01629 472747</a>
+      <a href="../index.html#contact">Start a project</a>
+      <span class="footer-addr">Khulna, Bangladesh</span>
+    </div>
+    <div>
+      <h6>Hours</h6>
+      <span class="footer-addr">Sun – Thu · 10:00 – 19:00</span>
+      <span class="footer-addr">By appointment on Fri / Sat</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year">2026</span> MNO AI LABS. All rights reserved.</span>
+    <span>Built with care in Bangladesh.</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>

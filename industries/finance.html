@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="AI automation for Banking, MFS and Fintech in Bangladesh — KYC, fraud detection, compliance RAG, customer-service LLMs and marketing copilots." />
+<title>Banking, MFS &amp; Fintech — MNO AI LABS</title>
+<link rel="icon" type="image/png" href="../logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="noise"></div>
+<div class="grid-bg"></div>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <img src="../logo.png" alt="MNO AI LABS" />
+      <span>MNO <b>AI</b> LABS</span>
+    </a>
+    <nav class="nav-links">
+      <a href="../index.html#services" data-hover>Services</a>
+      <a href="../index.html#industries" data-hover>Industries</a>
+      <a href="../index.html#capabilities" data-hover>Capabilities</a>
+      <a href="../index.html#process" data-hover>Process</a>
+      <a href="../index.html#contact" data-hover>Contact</a>
+    </nav>
+    <a href="../index.html#contact" class="nav-cta" data-hover>
+      <span>Start a project</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <nav>
+    <a href="../index.html#services">Services</a>
+    <a href="../index.html#industries">Industries</a>
+    <a href="../index.html#capabilities">Capabilities</a>
+    <a href="../index.html#process">Process</a>
+    <a href="../index.html#contact">Contact</a>
+    <a href="../index.html#contact" class="mobile-cta">Start a project →</a>
+  </nav>
+</div>
+
+<section class="sub-hero">
+  <div class="breadcrumb">
+    <a href="../index.html">Home</a>
+    <span class="sep">/</span>
+    <a href="../index.html#industries">Industries</a>
+    <span class="sep">/</span>
+    <span>Banking, MFS &amp; Fintech</span>
+  </div>
+  <div class="sub-hero-grid">
+    <div>
+      <span class="industry-tag">Banks · MFS · NBFI · Fintech</span>
+      <h1>AI inside the <i>trust perimeter</i>.</h1>
+      <p class="sub-lead">
+        Financial services live or die on trust. We build AI that earns it —
+        private, on-prem-ready, auditable — for KYC, fraud prevention,
+        compliance, customer service and marketing.
+      </p>
+      <div class="sub-hero-cta">
+        <a href="../index.html#contact" class="btn btn-primary" data-hover>
+          <span>Talk to us</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#usecases" class="btn btn-ghost" data-hover><span>See use cases</span></a>
+      </div>
+    </div>
+    <div class="sub-hero-visual">
+      <span class="visual-tag"><span class="dot"></span> Private deployment</span>
+      <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1400&q=80" alt="Finance" />
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:60px">
+  <div class="feature-row">
+    <div>
+      <span class="industry-tag">Why this, why now</span>
+      <h3>The manual work is gone from the front-end. It's still hiding in the back-office.</h3>
+      <p>Customers have moved to mobile. The next frontier is the back office — KYC queues, compliance reviews, customer-service tickets, circular interpretation, marketing content. That's where AI saves real hours, reduces real risk and brings real margin back.</p>
+      <ul>
+        <li>Automate KYC and onboarding without losing auditability</li>
+        <li>Real-time fraud signals on existing transaction rails</li>
+        <li>Private LLMs trained on your own circulars and policies</li>
+        <li>Gen-AI for compliant, on-brand marketing at scale</li>
+      </ul>
+    </div>
+    <div class="media-stage">
+      <span class="tag">KYC · face + ID + liveness</span>
+      <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1400&q=80" alt="KYC" />
+    </div>
+  </div>
+</section>
+
+<section class="section" id="usecases">
+  <div class="section-header">
+    <div class="eyebrow"><span></span> 01 — Use cases</div>
+    <h2 class="section-title reveal">Trust, <i>automated</i>.</h2>
+  </div>
+
+  <h3 style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;margin:10px 0 22px;color:var(--ink-dim)">Vision &amp; identity</h3>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Vision</span>
+      <h4>NID &amp; passport OCR</h4>
+      <p>Extract name, DOB, NID, address from Bangladeshi NID cards, passports, driving licenses and trade licenses — with field-level confidence.</p>
+      <div class="uc-tech"><span>OCR</span><span>Layout ML</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> Vision</span>
+      <h4>Face match &amp; liveness</h4>
+      <p>Selfie-to-ID match, anti-spoofing against printed and screen attacks, 3D liveness — built to pass local regulator expectations.</p>
+      <div class="uc-tech"><span>Face</span><span>Liveness</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> Vision</span>
+      <h4>Signature verification</h4>
+      <p>Compare signatures on cheques, loan forms and power-of-attorney documents against on-file specimens — catches obvious forgeries in seconds.</p>
+      <div class="uc-tech"><span>Siamese net</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Vision + LLM</span>
+      <h4>Cheque &amp; form processing</h4>
+      <p>Read MICR, payee, amount (numbers and words), date — and flag mismatches, alterations or missing fields automatically.</p>
+      <div class="uc-tech"><span>OCR</span><span>Rules</span></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;margin:60px 0 22px;color:var(--ink-dim)">Risk &amp; fraud</h3>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> ML</span>
+      <h4>Transaction fraud scoring</h4>
+      <p>Real-time fraud signals on MFS and card rails — money muling, account takeover, unusual cash-out patterns — with explainable features for analysts.</p>
+      <div class="uc-tech"><span>Gradient-boost</span><span>Graphs</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> ML + LLM</span>
+      <h4>Credit scoring &amp; memos</h4>
+      <p>Alt-data credit models for thin-file borrowers, and LLM-drafted credit memos that reference the evidence behind every score.</p>
+      <div class="uc-tech"><span>Classical ML</span><span>LLM</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> ML</span>
+      <h4>AML alert triage</h4>
+      <p>Prioritize AML alerts so analysts spend time on real cases, not obvious noise — and auto-draft case narratives for review.</p>
+      <div class="uc-tech"><span>Ranking</span><span>LLM</span></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;margin:60px 0 22px;color:var(--ink-dim)">LLM copilots &amp; automation</h3>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> LLM + RAG</span>
+      <h4>Bangladesh Bank circulars RAG</h4>
+      <p>Private assistant trained on your circulars, regulations and policies — answers compliance questions with citations, in Bangla or English.</p>
+      <div class="uc-tech"><span>RAG</span><span>Citations</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> LLM</span>
+      <h4>Customer-service copilot</h4>
+      <p>Assists human agents on chat, call and email — draft replies, pull account context, summarize long tickets — in Bangla &amp; English.</p>
+      <div class="uc-tech"><span>RAG</span><span>Bangla NLP</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> LLM</span>
+      <h4>Branch &amp; MFS agent copilot</h4>
+      <p>For branch staff and DSA field agents: product lookups, eligibility checks, form-fill prompts — on a simple app in Bangla.</p>
+      <div class="uc-tech"><span>LLM</span><span>Mobile</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> LLM</span>
+      <h4>Internal audit copilot</h4>
+      <p>Summarize long audit reports, find exceptions, and generate follow-up question lists — with every answer grounded in the source documents.</p>
+      <div class="uc-tech"><span>Summarization</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> LLM</span>
+      <h4>Loan application triage</h4>
+      <p>Parse incoming applications, classify product fit, flag missing documents, and route to the right officer — with reason codes.</p>
+      <div class="uc-tech"><span>Classifier</span><span>RAG</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> LLM</span>
+      <h4>Relationship manager brief</h4>
+      <p>A weekly LLM-written brief on each top-tier client — recent transactions, news, relationship touch-points — so RMs walk into every meeting informed.</p>
+      <div class="uc-tech"><span>RAG</span><span>News</span></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:500;margin:60px 0 22px;color:var(--ink-dim)">Marketing &amp; growth</h3>
+  <div class="usecases">
+    <div class="usecase">
+      <span class="uc-tag"><span class="d"></span> Gen-AI</span>
+      <h4>Campaign creative generator</h4>
+      <p>On-brand ads, social creatives, push-notifications and SMS — drafted in Bangla and English, compliance-checked before publication.</p>
+      <div class="uc-tech"><span>Diffusion</span><span>LLM</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag pink"><span class="d"></span> LLM</span>
+      <h4>Personalized offer engine</h4>
+      <p>Select the right offer for the right customer at the right time — with human-readable rationale the compliance team can approve.</p>
+      <div class="uc-tech"><span>Uplift ML</span><span>LLM</span></div>
+    </div>
+    <div class="usecase">
+      <span class="uc-tag mint"><span class="d"></span> Gen-AI</span>
+      <h4>Auto-translated collateral</h4>
+      <p>Keep Bangla and English versions of every doc in sync automatically — brochures, agreements, policy pages.</p>
+      <div class="uc-tech"><span>Translation</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-header">
+    <div class="eyebrow"><span></span> 02 — Pipeline</div>
+    <h2 class="section-title reveal">From document scan to <i>decision in seconds</i>.</h2>
+  </div>
+  <div class="pipeline">
+    <div class="pipe-step">
+      <div class="n">01 · INGEST</div>
+      <h5>Docs, txns, chats</h5>
+      <p>NIDs, forms, core-banking events, transaction streams, chat and call transcripts.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">02 · PERCEIVE</div>
+      <h5>Vision + NLP</h5>
+      <p>OCR, face, liveness, signature — plus NLP extraction on Bangla / English docs and chats.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">03 · REASON</div>
+      <h5>Risk models</h5>
+      <p>Fraud, credit, AML scoring and policy rules operate on the extracted signals with full traceability.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">04 · ACT</div>
+      <h5>Decision + audit</h5>
+      <p>Approve, hold, escalate, route to branch — each decision logged with the features and policies that drove it.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="n">05 · AUTOMATE</div>
+      <h5>LLM layer</h5>
+      <p>Credit memos, SAR narratives, customer responses and RM briefs — drafted by LLM, reviewed by humans.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="gallery">
+    <figure><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1400&q=80" alt="Bank"><figcaption>Branch automation</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=900&q=80" alt="Mobile banking"><figcaption>MFS onboarding</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1579621908742-07952f2d1a79?w=900&q=80" alt="Cards"><figcaption>Card fraud scoring</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&q=80" alt="Meeting"><figcaption>Credit committee</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=900&q=80" alt="Team"><figcaption>Analyst copilot</figcaption></figure>
+  </div>
+</section>
+
+<section class="section cta-section">
+  <div class="cta-inner">
+    <div class="cta-ornament"></div>
+    <span class="eyebrow center"><span></span> Let's build</span>
+    <h2 class="cta-title">Private by default, <br /><i class="gradient-text">productive by design.</i></h2>
+    <p class="cta-sub">Tell us what's clogged up in your back office. We'll propose a phased rollout — usually within one business day.</p>
+    <a href="../index.html#contact" class="btn btn-primary" data-hover>
+      <span>Start a conversation</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+    <div class="contact-alt">Or email us at <a href="mailto:mnoailabs@gmail.com">mnoailabs@gmail.com</a></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="../logo.png" alt="MNO AI LABS" />
+      <span>MNO <b>AI</b> LABS</span>
+    </div>
+    <div class="footer-tagline">Industrial AI, built in Bangladesh.</div>
+  </div>
+  <div class="footer-cols">
+    <div>
+      <h6>Industries</h6>
+      <a href="industrial-monitoring.html">Industrial Monitoring</a>
+      <a href="manufacturing.html">RMG &amp; Manufacturing</a>
+      <a href="finance.html">Finance &amp; Fintech</a>
+      <a href="ecommerce.html">E-commerce</a>
+      <a href="agriculture.html">Agriculture</a>
+      <a href="healthcare.html">Healthcare</a>
+    </div>
+    <div>
+      <h6>Services</h6>
+      <a href="../index.html#services">Agents</a>
+      <a href="../index.html#services">Vision</a>
+      <a href="../index.html#services">LLM &amp; RAG</a>
+      <a href="../index.html#services">Analytics</a>
+    </div>
+    <div>
+      <h6>Contact</h6>
+      <a href="mailto:mnoailabs@gmail.com">mnoailabs@gmail.com</a>
+      <a href="tel:+8801629472747">01629 472747</a>
+      <a href="../index.html#contact">Start a project</a>
+      <span class="footer-addr">Khulna, Bangladesh</span>
+    </div>
+    <div>
+      <h6>Hours</h6>
+      <span class="footer-addr">Sun – Thu · 10:00 – 19:00</span>
+      <span class="footer-addr">By appointment on Fri / Sat</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year">2026</span> MNO AI LABS. All rights reserved.</span>
+    <span>Built with care in Bangladesh.</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>
